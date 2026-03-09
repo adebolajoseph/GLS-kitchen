@@ -201,7 +201,7 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--gr
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: rgba(15,31,23,0.75);
+  background: rgba(15,31,23,0.6);
 }
 .hero-content {
   position: relative;
@@ -582,6 +582,7 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--gr
 @media (max-width: 768px) {
   /* Show hamburger */
   .hamburger { display: flex; }
+  .navbar.scrolled { backdrop-filter: none; }
 
   /* Mobile nav drawer - slides in from right */
   .nav-links {
@@ -644,8 +645,8 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--gr
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(2px);
-    z-index: 1040;
+    backdrop-filter: none;
+    z-index: 990;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.38s ease;
