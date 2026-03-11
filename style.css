@@ -87,7 +87,6 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--gr
 .navbar.scrolled {
   background: rgba(15,31,23,0.97);
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(12px);
 }
 .nav-inner {
   display: flex;
@@ -192,6 +191,7 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--gr
 .hero-overlay {
   position: absolute; inset: 0;
   background: rgba(15,31,23,0.75);
+  pointer-events: none;
 }
 .hero-content {
   position: relative;
